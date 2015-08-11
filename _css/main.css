@@ -127,7 +127,7 @@ body{
 .logo-container{
   position: absolute;
   z-index:5;
-  top:23px;
+  top:32px;
   left:5px;
   transition: top 0.2s ease-out;
 
