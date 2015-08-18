@@ -3,8 +3,8 @@ $(function(){
    var iScrollPos = 0;
    var halfSet = 0;
    var footer=$('#footer-wrapper');
-   var bottomAd=$('.bottom-ad-container');
-   var mainContainer=$('.main-container');
+   var bottomAd=$('#footer-ad');
+   var mainContainer=$('#content');
    var navContainer=$('#header');
    var pageHeight = mainContainer.offset().top+mainContainer.outerHeight()+bottomAd.outerHeight(); //Total Page Height.
    var topAd=$(".top-ad-container");

@@ -53,7 +53,7 @@ body{
   overflow: hidden;
 }
 
-#header.transition, .bottom-ad-container.transition{
+#header.transition, #footer-ad.transition{
     transition: all 0.2s ease-out;
 }
 #header.go-up{
@@ -371,7 +371,7 @@ ul.sub-navs li a:hover, ul.large-navs li a:hover{
 }
 
 
-.bottom-ad-container{
+#footer-ad{
   position:relative;
   width:100%;
   height:110px;
@@ -382,25 +382,25 @@ ul.sub-navs li a:hover, ul.large-navs li a:hover{
 
 }
 
-.bottom-ad-container img{ 
+#footer-ad img{ 
   position: relative;
   margin:10px auto;
   display: block;
 }
 
-.bottom-ad-container.stucky{
+#footer-ad.stucky{
   position: fixed;
   bottom:0;
   left:0;
   z-index: 999;
 }
 
-.bottom-ad-container.relativeFriend{
+#footer-ad.relativeFriend{
   position: relative;
   bottom: 0;
 }
 
-.bottom-ad-container.hidden{
+#footer-ad.hidden{
   bottom:-110px;
   position:fixed;
 }
