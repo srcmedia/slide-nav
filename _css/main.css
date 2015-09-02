@@ -26,15 +26,12 @@ body{
   width:100%;
   top:0px;
   left:0px;
-  background-color:#fff;
-  transition: all 0.2s ease-out;
-
-
+  background-color: #EBEBEB;
+  padding: 10px 0 0;
 }
 
 .ad-3{
-  border:1px solid;
-  margin:10px auto;
+  margin: 0 auto;
   position: relative;
   width:730px;
   height:92px;
@@ -42,14 +39,13 @@ body{
 
 #header{
   position: absolute;
-  height: 75px;
+  height: 55px;
   width:100%;
   top:110px;/*110px*/
   left:0px;
-  background: #fff;
+  background: #EBEBEB;
   border-bottom:1px #ccc solid;
   z-index: 10;
-  border-top:4px #1F86C8 solid;
   overflow: hidden;
 }
 
@@ -69,14 +65,12 @@ body{
 }
 
 .main-nav{
-  height:110px;
-  background-color:#fff;  
+  height: 55px;
+  background-color: #EBEBEB;
   transition: all 0.2s ease-out;
-  
-    width: 974px;
-    margin: 0 auto;
-    position: relative;
-
+  width: 974px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .ui-container{
@@ -333,7 +327,7 @@ ul.sub-navs li a:hover, ul.large-navs li a:hover{
   background:#fff;
   height:90px;
   width:100%;
-  margin-top: 85px;
+  margin-top: 65px;
   padding:10px;
 }
 
