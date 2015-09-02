@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+li.signin-button {
   box-sizing: inherit;
 }
 
@@ -42,9 +42,9 @@ body{
 
 #header{
   position: absolute;
-  height:110px;
+  height: 75px;
   width:100%;
-  top:110px; /*110px*/
+  top:110px;/*110px*/
   left:0px;
   background: #fff;
   border-bottom:1px #ccc solid;
@@ -179,18 +179,17 @@ ul.button-navs{
   position:absolute;
   right:0;
   top:-36px;
+  font-family: 'Roboto Condensed',SANS-SERIF;
 }
 
 ul.button-navs li{
   margin-top:10px;
   padding:0 20px 0 0;
-  font-size:12px;
+  font-size: 14px;
   line-height:28px;
   height:28px;
   display:inline-block;
-  font-family: Arial,Helvetica,Sans-serif;
-  z-index:10;
-  font-weight: bold;
+  font-family: 'Roboto Condensed', Helvetica, Sans-serif;
 }
 
 ul.button-navs li i{
@@ -213,17 +212,15 @@ ul.button-navs li:last-child{
 }
 
 ul.button-navs li a.highlighted{
-  color:#fff;
-  background-color:#D93B20;
   border-radius:4px;
   height:28px;
   padding:0 15px;
   display: block;
-  transition:background-color .2s ease-out;
+  font-weight: bold;
 }
 
-ul.button-navs li a.highlighted:hover{
-  background-color:#c2351d;
+ul.button-navs li a:hover{
+  color:#848485;
 }
 
 ul.button-navs li a:visited{
@@ -241,6 +238,7 @@ ul.button-navs li.highlighted a{
 
 ul.button-navs li.signin-button{
   padding-right:0;
+  font-weight: 400;
 }
 ul.large-navs li{
   font-family: 'Roboto',Sans-serif;
@@ -295,9 +293,8 @@ ul.large-navs li a{
 
 ul.sub-navs{
   float: left;
-  clear: left;
+  /* clear: left; */
   margin:5px 0 0;
-
 }
 
 ul.sub-navs li{
@@ -336,7 +333,7 @@ ul.sub-navs li a:hover, ul.large-navs li a:hover{
   background:#fff;
   height:90px;
   width:100%;
-  margin-top:120px;
+  margin-top: 85px;
   padding:10px;
 }
 

@@ -35,7 +35,7 @@ $(function(){
       if (iCurScrollPos > iScrollPos) {    
         //Scrolling Down
         if(halfSet===1 && !bottomAd.hasClass('stucky') && !(windowScrollBottom>=pageHeight)){     //past our ad kick point
-            navContainer.addClass('transition go-up');         //Hide the navigation
+         //   navContainer.addClass('transition go-up');         //Hide the navigation
             bottomAd.addClass('stucky transition').removeClass('hidden'); //Stick the bottom ad/show it
         }
         if(windowScrollBottom>=pageHeight){
@@ -47,7 +47,7 @@ $(function(){
        //Scrolling Up
 
           if(halfSet==1){
-            navContainer.removeClass('go-up');                  //Show the NAV
+          //  navContainer.removeClass('go-up');                  //Show the NAV
           }
           if(halfSet===1 && bottomAd.hasClass('stucky') && !bottomAd.hasClass('relativeFriend')){       //more than whatever position we were at and the bottom ad is showing
             bottomAd.removeClass('stucky').addClass('hidden');  //Hide the stick
