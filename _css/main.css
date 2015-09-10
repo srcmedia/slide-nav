@@ -263,7 +263,7 @@ ul.large-navs{
 ul.large-navs li{
   font-family: 'Roboto',Sans-serif;
   font-size: 13px;
-  padding: 0 10px 0 0;
+  padding: 0 12.5px 0 0;
   float:left;
   display:inline-block;
   font-weight: bold;
@@ -271,6 +271,13 @@ ul.large-navs li{
   line-height: 17px;
 }
 
+ul.large-navs li.small-nav{
+  font-weight:normal;
+}
+
+ul.large-navs li:last-child{
+  padding-right:0;
+}
 .search-button{
   z-index: 99;
   cursor: pointer;
