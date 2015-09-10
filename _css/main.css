@@ -38,12 +38,11 @@ body{
 
 #header{
   position: absolute;
-  height: 55px;
+  height: 58px;
   width:100%;
   top:110px;/*110px*/
   left:0px;
   background: #EBEBEB;
-  /* border-bottom:1px #ccc solid; */
   z-index: 10;
   overflow: hidden;
 }
@@ -177,11 +176,11 @@ ul.button-navs{
 ul.button-navs li{
   margin-top:10px;
   padding: 0 10px 0 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height:28px;
   height: inherit;
   display:inline-block;
-  font-family: 'Roboto', Helvetica, Sans-serif;
+  font-family: 'Roboto Regular', Helvetica, Sans-serif;
 }
 
 ul.button-navs .searcharea{
@@ -204,24 +203,45 @@ ul.button-navs li.hidden{
   display:none;
 }
 
+ul.button-navs li.logged-in{
+  text-transform: inherit;
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+ul.button-navs li.logged-in i{
+  margin-left: 6px;
+}
+
+ul.button-navs li.logged-out a:hover, ul.button-navs li.logged-in a:hover{
+   color:#848485;
+
+}
 
 ul.button-navs li:first-child{
 position: relative;
-padding-right: 30px;}
+margin-right: 20px;}
 ul.button-navs li:last-child, ul.sub-navs li:last-child
 {
   padding:0;
 }
 
 ul.button-navs li.social{
-  /*float:left;*/
   margin-top: 10px;
   position: relative;
-  padding-right:20px;
+  padding-right: 15px;
   font-size:13px;
 }
 
+li.social a{
+  color:#606060;
+}
 
+ul.button-navs li.social .fa-google-plus{
+  top: 4px;
+  position: relative;
+  font-size: 15px;
+}
 ul.button-navs li a{
   text-decoration: none;
   color: #1F1F1F;
@@ -229,6 +249,7 @@ ul.button-navs li a{
 
 ul.button-navs li.register-button{
   font-weight:bold;
+  margin-left: 15px;
 }
 ul.button-navs li.highlighted a{
   color:#fff;
@@ -251,9 +272,13 @@ ul.button-navs li.signin-button{
 ul.button-navs li.signin-button a{
   color:#1f1f1f;
 }
+
+ul.button-navs li.signin-button a:hover{
+  color:#848485;
+}
 ul.large-navs{
   margin:0;
-  padding: 2px 0 0;
+  padding: 4px 0 0;
   border-top:1px solid #aeaeae;
   position: relative;
   width: 779px;
@@ -275,6 +300,9 @@ ul.large-navs li.small-nav{
   font-weight:normal;
 }
 
+ul.large-navs li.small-nav a{
+  color:#454545;
+}
 ul.large-navs li:last-child{
   padding-right:0;
 }
@@ -285,6 +313,7 @@ ul.large-navs li:last-child{
   right: 20px;
   top: 7px;
   position: absolute;
+  font-size: 14px;
 }
 
 #search-box{
@@ -294,7 +323,7 @@ ul.large-navs li:last-child{
   transition:all .5s ease-out;
   z-index: 1;
   right: 0;
-  top: 0;
+  top: 2px;
 }
 
 #search-box.hidden{
@@ -308,14 +337,15 @@ ul.large-navs li:last-child{
 
 #search-box input[type="text"]{
   text-indent: 3px;
-  padding:3px;
+  padding: 0px;
   width: 145px;
-  height: 21px;
+  height: 22px;
   transition:all .5s ease-out;
   border: none;
   position: absolute;
   z-index: 1;
   right: 14px;
+  border: 1px solid #ccc;
 }
 
 
