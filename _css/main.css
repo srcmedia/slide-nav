@@ -281,7 +281,7 @@ ul.large-navs{
   padding: 4px 0 0;
   border-top:1px solid #aeaeae;
   position: relative;
-  width: 779px;
+  width: 770px;
   top: 31px;
   left: 52px;
 }
@@ -305,6 +305,7 @@ ul.large-navs li.small-nav a{
 }
 ul.large-navs li:last-child{
   padding-right:0;
+  float: right;
 }
 .search-button{
   z-index: 99;
