@@ -3,17 +3,9 @@ html {
 }
 
 
-body{
-  font-family:Arial, Helvetica, Sans-serif;
-  background-color:#fff;
-  padding:0;
-  margin:0;
-  width: 100%;
-}
-
 .main-container{
   width:940px;
-  margin:25px auto 0;
+  margin:0 auto 0;
   background:#fff;
   padding:20px;
 
@@ -37,11 +29,9 @@ body{
 }
 
 #header{
-  position: absolute;
+  position: relative;
   height: 58px;
   width:100%;
-  top:110px;/*110px*/
-  left:0px;
   background: #EBEBEB;
   z-index: 10;
   overflow: hidden;
@@ -65,8 +55,7 @@ body{
 .main-nav{
   height: 55px;
   background-color: #EBEBEB;
-  transition: all 0.2s ease-out;
-  width: 974px;
+  width: 940px;
   margin: 0 auto;
   position: relative;
 }
@@ -74,7 +63,6 @@ body{
 .ui-container{
   position:relative;
   margin-top:0;
-  overflow:hidden;
   height:100%;
 }
 
@@ -117,8 +105,7 @@ body{
   position: absolute;
   z-index:5;
   top: 7px;
-  left:5px;
-  transition: top 0.2s ease-out;
+  left:10px;
 }
 
 .logo-container img{
@@ -132,7 +119,7 @@ body{
 
 
 .information-container{
-  left: 153px;
+  right: 0px;
   width: 821px;
   top: 0px;
   position:absolute;
@@ -469,6 +456,7 @@ ul.sub-navs li a:hover, ul.large-navs li a:hover{
 
 #footer-ad.hidden{
   bottom:-110px;
+  left:0px;
   position:fixed;
 }
 
