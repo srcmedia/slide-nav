@@ -1,14 +1,15 @@
 $(function(){
 	
-   var iScrollPos = 0;
-   var halfSet = 0;
-   var footer=$('#footer-wrapper');
-   var bottomAd=$('#footer-ad');
-   var mainContainer=$('#content');
-   var navContainer=$('#header');
-   var pageHeight = mainContainer.offset().top+mainContainer.outerHeight()+bottomAd.outerHeight(); //Total Page Height.
-   var topAd=$(".top-ad-container");
+   var iScrollPos = 0,
+       halfSet = 0,
+       footer=$('#footer-wrapper'),
+       bottomAd=$('#footer-ad'),
+       mainContainer=$('#content'),
+       navContainer=$('#header'),
+       topAd=$(".top-ad-container");
 
+   var pageHeight = mainContainer.offset().top+mainContainer.outerHeight()+bottomAd.outerHeight(); //Total Page Height.
+   
    //First check if the page is too short and affix bottom ad in place
     var windowScrollBottom=$(window).scrollTop()+$(window).height(); //Define the bottom of the screen please. Rechecks on scroll just in case of resize
     if(windowScrollBottom>=pageHeight){
